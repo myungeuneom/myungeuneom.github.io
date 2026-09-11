@@ -74,8 +74,11 @@ h1 {
 }
 .role { margin: 0 0 1.1rem; color: var(--ink-soft); font-size: 1.02rem; line-height: 1.55; }
 
-.contact { margin: 0; padding: 0; list-style: none; font-size: 1rem; }
-.contact li { margin-bottom: .25rem; }
+/* .contact { margin: 0; padding: 0; list-style: none; font-size: 1rem; } */
+/* .contact li { margin-bottom: .25rem; } */
+.contact { margin: 0 0 .3rem; font-size: 1rem; }
+.links { margin: 0; font-size: 1rem; }
+.links span { color: var(--line); margin: 0 .45rem; }
 
 /* ---- recruiting notice ------------------------------------------------- */
 .notice {
