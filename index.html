@@ -31,6 +31,12 @@
     <img class="portrait" src="files/photo.jpg" alt="Myungeun Eom">
     <div class="card">
       <h1>Myungeun Eom</h1>
+      <p class="pronounce">
+      Pronounced <em>MYUHNG-un UHM</em> (명은 엄)
+      <button type="button" aria-label="Hear how my name is pronounced"
+              onclick="document.getElementById('say-name').play()">▶</button>
+      <audio id="say-name" src="files/name.mp3" preload="none"></audio>
+    </p>
       <p class="role">
         Assistant Professor<br>
         Department of Industrial and Systems Engineering<br>
@@ -45,9 +51,8 @@
   </header>
 
   <p class="notice">
-    I am recruiting 1–2 self-motivated PhD students who can start in Spring or Fall 2027. If you
-    are interested in working with me, please reach out to
-    <a href="mailto:myungeun.eom@auburn.edu">my email</a> with your CV and a short description of
+    I am recruiting 1–2 self-motivated PhD students. If you
+    are interested in working with me, please email me your CV, (unofficial) transcript, and a short description of
     your research interests.
   </p>
 
