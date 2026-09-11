@@ -65,7 +65,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
   width: var(--portrait-size); height: var(--portrait-size); flex: none;
   object-fit: cover; border-radius: 2px;
 }
-.card { padding-top: .5rem; }
+.card { padding-top: 0rem; }
 
 h1 {
   font: 700 2.75rem/1.08 var(--display);
