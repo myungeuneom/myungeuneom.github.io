@@ -5,6 +5,7 @@
   --accent:   #0e4c6e;   /* links, rules         */
   --line:     #dfe3e6;   /* hairlines            */
   --paper:    #ffffff;
+  --notice-bg: #eef4f9;  /* recruiting callout background */
 
   --display: "Bitter", Georgia, "Times New Roman", serif;
   --sans:    "Source Sans 3", -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
@@ -58,7 +59,7 @@ a:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; border-
 /* ---- intro ------------------------------------------------------------- */
 .intro {
   display: flex; gap: 2.25rem; align-items: flex-start;
-  margin: 3.25rem 0 3rem;
+  margin: 3.25rem 0 2.25rem;
 }
 .portrait {
   width: var(--portrait-size); height: var(--portrait-size); flex: none;
@@ -75,6 +76,20 @@ h1 {
 
 .contact { margin: 0; padding: 0; list-style: none; font-size: 1rem; }
 .contact li { margin-bottom: .25rem; }
+
+/* ---- recruiting notice ------------------------------------------------- */
+.notice {
+  margin: 0 0 3rem;
+  padding: 1.05rem 1.25rem;
+  background: var(--notice-bg);
+  border-left: 5px solid var(--accent);
+  border-radius: 0 3px 3px 0;
+  color: var(--accent);
+  font-weight: 600;
+  font-size: 1.02rem;
+  line-height: 1.55;
+}
+.notice a { color: inherit; border-bottom-color: currentColor; }
 
 /* ---- sections ---------------------------------------------------------- */
 section { margin: 0 0 3.25rem; }
@@ -95,6 +110,13 @@ section > h3:first-of-type { margin-top: 1.5rem; }
 section p { margin: 0 0 1rem; }
 
 .title { font-weight: 600; }
+
+/* paper titles that are links: dark text, accent underline */
+.title a {
+  color: var(--ink);
+  border-bottom: 1px solid rgba(14,76,110,.45);
+}
+.title a:hover { color: var(--accent); border-bottom-color: var(--accent); }
 
 ol.pubs { margin: 0; padding-left: 1.4rem; }
 ol.pubs li { margin-bottom: 1rem; padding-left: .2rem; }
@@ -125,4 +147,5 @@ footer p { margin: 0; }
   .portrait { width: 13rem; height: 13rem; }
   h1 { font-size: 2.2rem; }
   h2 { font-size: 1.35rem; }
+  .notice { font-size: .98rem; padding: .95rem 1.05rem; }
 }
