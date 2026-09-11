@@ -93,6 +93,8 @@ h1 {
   line-height: 1.55;
 }
 .notice a { color: inherit; border-bottom-color: currentColor; }
+.intro a { border-bottom: none; }
+.intro a:hover { text-decoration: underline; }
 
 /* ---- sections ---------------------------------------------------------- */
 section { margin: 0 0 3.25rem; }
