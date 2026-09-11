@@ -134,7 +134,7 @@ ul.plain.tight > li { margin-bottom: .45rem; }
 .pronounce {
   margin: -.35rem 0 .9rem;
   color: var(--ink-soft);
-  font-size: .8rem;
+  font-size: .85rem;
 }
 .pronounce em { font-style: normal; letter-spacing: .03em; }
 .pronounce button {
